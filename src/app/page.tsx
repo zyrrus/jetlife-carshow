@@ -3,10 +3,8 @@ import { cn } from "~/lib/utils";
 
 export default function HomePage() {
   return (
-    <main className="">
+    <main className="container">
       <Hero />
-      <Sponsor />
-      <Flyer />
       <Endorsements />
       <Afterparty />
     </main>
@@ -15,28 +13,40 @@ export default function HomePage() {
 
 const Hero = () => {
   return (
-    <section>
-      <h1>Jetlife Carshow</h1>
-      <Poster src="/assets/flyers/jetlife-carshow.jpg" />
-      <Poster src="/assets/flyers/dream-doll.jpg" />
+    <section className="container grid grid-cols-2">
+      <h1>Jetlife Car Show</h1>
+      <Poster src="/assets/flyers/jetlife-carshow.jpg" className="max-w-md" />
     </section>
   );
 };
 
-const Sponsor = () => {
-  return <section></section>;
-};
-
-const Flyer = () => {
-  return <section></section>;
-};
-
 const Endorsements = () => {
-  return <section></section>;
+  const images = [
+    "/assets/jetlife.jpg",
+    "/assets/Nascar.PNG",
+    "/assets/Jrumz.PNG",
+    "/assets/sailors-brew.png",
+    "/assets/The504Live.JPG",
+  ];
+  return (
+    <section className="container">
+      <div className="mx-auto flex max-w-screen-lg flex-row justify-center">
+        {images.map((src) => (
+          <div key={src} className="relative aspect-[2/1] w-auto flex-1">
+            <Image src={src} alt="" fill className="object-contain" />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 };
 
 const Afterparty = () => {
-  return <section></section>;
+  return (
+    <section>
+      <Poster src="/assets/flyers/dream-doll.jpg" className="max-w-52" />
+    </section>
+  );
 };
 
 const Poster = ({
@@ -49,7 +59,12 @@ const Poster = ({
   className?: string;
 }) => {
   return (
-    <div className={cn("relative size-60", className)}>
+    <div
+      className={cn(
+        "relative aspect-[108/135] w-auto max-w-[1080px] bg-red-500",
+        className,
+      )}
+    >
       <Image src={src} alt={alt} className="object-contain" fill />
     </div>
   );
