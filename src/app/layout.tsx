@@ -4,7 +4,7 @@ import { GeistSans } from "geist/font/sans";
 
 export const metadata = {
   title: "Jetlife Carshow",
-  description: "",
+  description: "2nd annual Jetlife Car Show presented by Nascar.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
