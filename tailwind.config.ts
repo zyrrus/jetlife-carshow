@@ -22,6 +22,10 @@ const config = {
       fontFamily: {
         sans: ["var(--font-display)", ...fontFamily.sans],
       },
+      colors: {
+        bg: "#C0B2AC",
+        fg: "#2C2321",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

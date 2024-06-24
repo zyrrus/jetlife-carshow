@@ -20,10 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${display.variable} bg-[#C0B2AC] text-[#2C2321]`}
-    >
+    <html lang="en" className={`${display.variable} bg-bg text-fg`}>
       <body>{children}</body>
     </html>
   );
