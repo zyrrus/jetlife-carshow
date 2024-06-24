@@ -6,7 +6,8 @@ export default function HomePage() {
     <main className="">
       <Hero />
       <Endorsements />
-      {/*  <Afterparty /> */}
+      <Event />
+      <Afterparty />
     </main>
   );
 }
@@ -36,12 +37,19 @@ const Hero = () => {
       </div>
       {/* CTA */}
       <div className="container -mt-[min(12.5vw,1800px*0.125)] mb-[min(5vw,1800px*0.05)] flex flex-col justify-center gap-4 md:flex-row">
-        <button className="border-fg flex-1 rounded-xl border py-6 text-xl font-bold transition-all hover:border-transparent hover:bg-white/20">
+        <a
+          href="#event-details"
+          className="border-fg flex-1 rounded-xl border py-6 text-center text-xl font-bold transition-all hover:border-transparent hover:bg-white/20"
+        >
           Learn more
-        </button>
-        <button className="border-fg flex-1 rounded-xl border py-6 text-xl font-bold transition-all hover:border-transparent hover:bg-white/20">
+        </a>
+        <a
+          href="https://www.eventbrite.com/e/the-jetlife-cars-coffee-bike-carshow-presented-by-nascar-tickets-888104393147?aff=oddtdtcreator"
+          target="_blank"
+          className="border-fg flex-1 rounded-xl border py-6 text-center text-xl font-bold transition-all hover:border-transparent hover:bg-white/20"
+        >
           Feature your car
-        </button>
+        </a>
       </div>
     </section>
   );
@@ -71,10 +79,76 @@ const Endorsements = () => {
   );
 };
 
+const Event = () => {
+  return (
+    <section
+      id="event-details"
+      className="container grid max-w-md grid-cols-1 gap-x-8 gap-y-9 pt-24 md:max-w-screen-lg md:grid-cols-2"
+    >
+      <Poster
+        src="/assets/flyers/jetlife-carshow.jpg"
+        className={cn(
+          "w-full max-w-md -rotate-3 justify-self-center",
+          "before:absolute before:bottom-2.5 before:-z-10 before:h-2.5 before:w-2/5 before:shadow-[0_5px_14px_rgba(0,0,0,0.7)] before:transition-all before:content-['']",
+          "after:absolute after:bottom-2.5 after:-z-10 after:h-2.5 after:w-2/5 after:shadow-[0_5px_14px_rgba(0,0,0,0.7)] after:transition-all after:content-['']",
+          "before:left-4 before:rotate-0 before:-skew-x-6 before:-skew-y-6",
+          "after:right-4 after:rotate-0 after:skew-x-6 after:skew-y-6",
+        )}
+      />
+      <div className="border-fg space-y-2 self-center rounded-xl border p-6 shadow-lg">
+        <h2 className="border-fg border-b text-3xl font-bold">Event Details</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+          labore, dolores architecto beatae nemo aspernatur voluptates excepturi
+        </p>
+        <ul className="list-inside list-disc">
+          <li>Lorem ipsum, dolor</li>
+          <li>Sit amet consectetur</li>
+          <li>Dolores architecto beatae nemo</li>
+        </ul>
+        <p>
+          Distinctio non maxime quis, illo quo sequi, quasi corrupti quae odit
+          Eius eligendi similique, assumenda, delectus, soluta omnis numquam
+          animi nisi nobis deleniti ea. Sunt!
+        </p>
+      </div>
+    </section>
+  );
+};
+
 const Afterparty = () => {
   return (
-    <section>
-      <Poster src="/assets/flyers/dream-doll.jpg" className="max-w-52" />
+    <section
+      id="afterparty"
+      className="container grid max-w-md grid-cols-1 gap-x-8 gap-y-9 py-24 md:max-w-screen-lg md:grid-cols-2"
+    >
+      <Poster
+        src="/assets/flyers/dream-doll.jpg"
+        className={cn(
+          "w-full max-w-md rotate-6 justify-self-center md:order-1",
+          "before:absolute before:bottom-2.5 before:-z-10 before:h-2.5 before:w-2/5 before:shadow-[0_5px_14px_rgba(0,0,0,0.7)] before:transition-all before:content-['']",
+          "after:absolute after:bottom-2.5 after:-z-10 after:h-2.5 after:w-2/5 after:shadow-[0_5px_14px_rgba(0,0,0,0.7)] after:transition-all after:content-['']",
+          "before:left-4 before:rotate-0 before:-skew-x-6 before:-skew-y-6",
+          "after:right-4 after:rotate-0 after:skew-x-6 after:skew-y-6",
+        )}
+      />
+      <div className="border-fg space-y-2 self-center rounded-xl border p-6 shadow-lg">
+        <h2 className="border-fg border-b text-3xl font-bold">After Party</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+          labore, dolores architecto beatae nemo aspernatur voluptates excepturi
+        </p>
+        <ul className="list-inside list-disc">
+          <li>Lorem ipsum, dolor</li>
+          <li>Sit amet consectetur</li>
+          <li>Dolores architecto beatae nemo</li>
+        </ul>
+        <p>
+          Distinctio non maxime quis, illo quo sequi, quasi corrupti quae odit
+          Eius eligendi similique, assumenda, delectus, soluta omnis numquam
+          animi nisi nobis deleniti ea. Sunt!
+        </p>
+      </div>
     </section>
   );
 };

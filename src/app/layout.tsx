@@ -9,7 +9,7 @@ const display = Syne({
 });
 
 export const metadata = {
-  title: "Jetlife Carshow",
+  title: "Jetlife Car Show",
   description: "2nd annual Jetlife Car Show presented by Nascar.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
@@ -20,7 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${display.variable} bg-bg text-fg`}>
+    <html
+      lang="en"
+      className={`${display.variable} bg-bg text-fg scroll-smooth`}
+    >
       <body>{children}</body>
     </html>
   );
