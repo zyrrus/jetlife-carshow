@@ -28,10 +28,11 @@ const Hero = () => {
       {/* Background Image */}
       <div className="relative -z-10 mx-auto mt-[min(8vw,1800px*0.08)] aspect-[1792/1024] w-full max-w-[1800px]">
         <Image
-          src="/assets/hero.png"
+          src="/assets/hero.webp"
           alt=""
           fill
           className="object-contain object-bottom"
+          priority
         />
         <div className="absolute inset-0 [background-image:linear-gradient(to_top,#C0B2AC,rgba(0,0,0,0)_30%),linear-gradient(to_bottom,#C0B2AC,rgba(0,0,0,0)_20%),linear-gradient(to_left,#C0B2AC,rgba(0,0,0,0)_10%),linear-gradient(to_right,#C0B2AC,rgba(0,0,0,0)_10%)]" />
       </div>
@@ -57,11 +58,11 @@ const Hero = () => {
 
 const Endorsements = () => {
   const images = [
-    "/assets/jetlife.jpg",
-    "/assets/Nascar.PNG",
-    "/assets/Jrumz.PNG",
-    "/assets/sailors-brew.png",
-    "/assets/The504Live.JPG",
+    "/assets/jetlife.webp",
+    "/assets/nascar.webp",
+    "/assets/jrumz.webp",
+    "/assets/sailors-brew.webp",
+    "/assets/the504live.webp",
   ];
   return (
     <section className="mx-auto flex max-w-screen-lg flex-row justify-center">
@@ -86,7 +87,7 @@ const Event = () => {
       className="container grid max-w-md grid-cols-1 gap-x-8 gap-y-9 pt-24 md:max-w-screen-lg md:grid-cols-2"
     >
       <Poster
-        src="/assets/flyers/jetlife-carshow.jpg"
+        src="/assets/flyers/jetlife-carshow.webp"
         className={cn(
           "w-full max-w-md -rotate-3 justify-self-center",
           "before:absolute before:bottom-2.5 before:-z-10 before:h-2.5 before:w-2/5 before:shadow-[0_5px_14px_rgba(0,0,0,0.7)] before:transition-all before:content-['']",
@@ -124,7 +125,7 @@ const Afterparty = () => {
       className="container grid max-w-md grid-cols-1 gap-x-8 gap-y-9 py-24 md:max-w-screen-lg md:grid-cols-2"
     >
       <Poster
-        src="/assets/flyers/dream-doll.jpg"
+        src="/assets/flyers/dream-doll.webp"
         className={cn(
           "w-full max-w-md rotate-6 justify-self-center md:order-1",
           "before:absolute before:bottom-2.5 before:-z-10 before:h-2.5 before:w-2/5 before:shadow-[0_5px_14px_rgba(0,0,0,0.7)] before:transition-all before:content-['']",
