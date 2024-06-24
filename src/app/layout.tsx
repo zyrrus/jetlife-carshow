@@ -9,8 +9,9 @@ const display = Syne({
 });
 
 export const metadata = {
-  title: "Jetlife Car Show",
-  description: "2nd annual Jetlife Car Show presented by Nascar.",
+  title: "The Jetlife Cars & Coffee, Bike & Carshow presented by NASCAR",
+  description:
+    "Come join us at The Jetlife Cars & Coffee, Bike + Car show 2024 for a day of dope cars, loud music, and good family friendly vibes!",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 

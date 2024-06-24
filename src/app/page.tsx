@@ -97,20 +97,21 @@ const Event = () => {
       />
       <div className="border-fg space-y-2 self-center rounded-xl border p-6 shadow-lg">
         <h2 className="border-fg border-b text-3xl font-bold">Event Details</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
-          labore, dolores architecto beatae nemo aspernatur voluptates excepturi
+        <p className="!mt-4 italic">
+          The 2nd Annual Jetlife Cars & Coffee, Bike & Carshow presented by
+          NASCAR
         </p>
         <ul className="list-inside list-disc">
-          <li>Lorem ipsum, dolor</li>
-          <li>Sit amet consectetur</li>
-          <li>Dolores architecto beatae nemo</li>
+          <li>Saturday, July 6 · 12 - 6pm CDT</li>
+          <li>1540 Canal Street New Orleans, LA 70112</li>
         </ul>
         <p>
-          Distinctio non maxime quis, illo quo sequi, quasi corrupti quae odit
-          Eius eligendi similique, assumenda, delectus, soluta omnis numquam
-          animi nisi nobis deleniti ea. Sunt!
+          From classic cars to modern marvels, there{"'"}s something for
+          everyone at The Jetlife Carshow 2024. Don{"'"}t miss out on the chance
+          to check out some of the hottest rides around and maybe even win some
+          cool prizes. Mark your calendars and get ready to rev your engines!
         </p>
+        <p>Part of the Proceeds will support the Jetlife Grind Academy.</p>
       </div>
     </section>
   );
