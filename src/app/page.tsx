@@ -5,42 +5,33 @@ export default function HomePage() {
   return (
     <main className="">
       <Hero />
-      <Endorsements />
-      <Afterparty />
+      {/* <Endorsements />
+      <Afterparty /> */}
     </main>
   );
 }
 
 const Hero = () => {
   return (
-    <section className="container grid min-h-screen grid-cols-2">
-      <h1>Jetlife Car Show</h1>
-      <div className="relative">
-        <div className="absolute top-1/2 w-full -translate-y-1/2 translate-x-12">
-          <Poster
-            src="/assets/flyers/dream-doll.jpg"
-            className={cn(
-              "max-w-md -rotate-3",
-              "before:absolute before:bottom-2.5 before:-z-10 before:h-2.5 before:w-2/5 before:shadow-[0_5px_14px_rgba(0,0,0,0.7)] before:transition-all before:content-['']",
-              "after:absolute after:bottom-2.5 after:-z-10 after:h-2.5 after:w-2/5 after:shadow-[0_5px_14px_rgba(0,0,0,0.7)] after:transition-all after:content-['']",
-              "before:left-4 before:rotate-0 before:-skew-x-6 before:-skew-y-6",
-              "after:right-4 after:rotate-0 after:skew-x-6 after:skew-y-6",
-            )}
-          />
+    <section className="mx-auto flex min-h-screen flex-col">
+      <div className="mx-auto -mb-[22.5vw] mt-auto flex h-full max-w-fit flex-col-reverse leading-none md:flex-col">
+        <h1 className="text-[7.25vw] font-black text-white">
+          Jetlife Car Show
+        </h1>
+        <div className="flex flex-col-reverse justify-between text-sm font-bold uppercase md:flex-row md:text-[1.7vw]">
+          <p>1540 Canal St, New Orleans</p>
+          <p>July 6th</p>
         </div>
-
-        <div className="absolute top-1/2 w-full -translate-y-1/2">
-          <Poster
-            src="/assets/flyers/jetlife-carshow.jpg"
-            className={cn(
-              "max-w-md rotate-6",
-              "before:absolute before:bottom-2.5 before:-z-10 before:h-2.5 before:w-2/5 before:shadow-[0_5px_14px_rgba(0,0,0,0.7)] before:transition-all before:content-['']",
-              "after:absolute after:bottom-2.5 after:-z-10 after:h-2.5 after:w-2/5 after:shadow-[0_5px_14px_rgba(0,0,0,0.7)] after:transition-all after:content-['']",
-              "before:left-4 before:rotate-0 before:-skew-x-6 before:-skew-y-6",
-              "after:right-4 after:rotate-0 after:skew-x-6 after:skew-y-6",
-            )}
-          />
-        </div>
+      </div>
+      {/* Background Image */}
+      <div className="relative -z-10 mx-auto mt-[7vw] aspect-[1792/1024] w-full max-w-screen-2xl">
+        <Image
+          src="/assets/hero.png"
+          alt=""
+          fill
+          className="object-contain object-bottom"
+        />
+        <div className="absolute inset-0 [background-image:linear-gradient(to_top,#C0B2AC,rgba(0,0,0,0)_30%),linear-gradient(to_bottom,#C0B2AC,rgba(0,0,0,0)_20%)]" />
       </div>
     </section>
   );
