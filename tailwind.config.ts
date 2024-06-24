@@ -20,7 +20,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-geist-sans)", ...fontFamily.sans],
+        sans: ["var(--font-display)", ...fontFamily.sans],
       },
       keyframes: {
         "accordion-down": {

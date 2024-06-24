@@ -1,6 +1,12 @@
 import "~/styles/globals.css";
 
-import { GeistSans } from "geist/font/sans";
+import { Syne } from "next/font/google";
+
+const display = Syne({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-display",
+});
 
 export const metadata = {
   title: "Jetlife Carshow",
@@ -14,7 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
+    <html
+      lang="en"
+      className={`${display.variable} bg-[#C0B2AC] text-[#2C2321]`}
+    >
       <body>{children}</body>
     </html>
   );
