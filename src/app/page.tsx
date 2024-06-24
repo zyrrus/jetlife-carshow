@@ -26,13 +26,20 @@ const Hero = () => {
         </div>
       </div>
       {/* Background Image */}
-      <div className="relative -z-10 mx-auto mt-[min(8vw,1800px*0.08)] aspect-[1792/1024] w-full max-w-[1800px]">
-        <Image
+      <div className="relative -z-10 mx-auto mt-[min(8vw,1800px*0.08)] aspect-[1792/1024] w-full max-w-[1800px] ">
+        {/* <Image
           src="/assets/hero.webp"
           alt=""
           fill
           className="object-contain object-bottom"
           priority
+        /> */}
+        <Image
+          src="/assets/car1.webp"
+          alt=""
+          className="object-contain object-bottom"
+          priority
+          fill
         />
         <div className="absolute inset-0 [background-image:linear-gradient(to_top,#C0B2AC,rgba(0,0,0,0)_30%),linear-gradient(to_bottom,#C0B2AC,rgba(0,0,0,0)_20%),linear-gradient(to_left,#C0B2AC,rgba(0,0,0,0)_10%),linear-gradient(to_right,#C0B2AC,rgba(0,0,0,0)_10%)]" />
       </div>
@@ -40,16 +47,16 @@ const Hero = () => {
       <div className="container -mt-[min(12.5vw,1800px*0.125)] mb-[min(5vw,1800px*0.05)] flex flex-col justify-center gap-4 md:flex-row">
         <a
           href="#event-details"
-          className="border-fg flex-1 rounded-xl border py-6 text-center text-xl font-bold transition-all hover:border-transparent hover:bg-white/20"
+          className="flex-1 rounded-xl border border-fg py-6 text-center text-xl font-bold transition-all hover:border-transparent hover:bg-white/20"
         >
           Learn more
         </a>
         <a
           href="https://www.eventbrite.com/e/the-jetlife-cars-coffee-bike-carshow-presented-by-nascar-tickets-888104393147?aff=oddtdtcreator"
           target="_blank"
-          className="border-fg flex-1 rounded-xl border py-6 text-center text-xl font-bold transition-all hover:border-transparent hover:bg-white/20"
+          className="flex-1 rounded-xl border border-fg py-6 text-center text-xl font-bold transition-all hover:border-transparent hover:bg-white/20"
         >
-          Feature your car
+          Click to purchase
         </a>
       </div>
     </section>
@@ -96,8 +103,8 @@ const Event = () => {
           "after:right-4 after:rotate-0 after:skew-x-6 after:skew-y-6",
         )}
       />
-      <div className="border-fg space-y-2 self-center rounded-xl border p-6 shadow-lg">
-        <h2 className="border-fg border-b text-3xl font-bold">Event Details</h2>
+      <div className="space-y-2 self-center rounded-xl border border-fg p-6 shadow-lg">
+        <h2 className="border-b border-fg text-3xl font-bold">Event Details</h2>
         <p className="!mt-4 italic">
           The 2nd Annual Jetlife Cars & Coffee, Bike & Carshow presented by
           NASCAR
@@ -134,22 +141,26 @@ const Afterparty = () => {
           "after:right-4 after:rotate-0 after:skew-x-6 after:skew-y-6",
         )}
       />
-      <div className="border-fg space-y-2 self-center rounded-xl border p-6 shadow-lg">
-        <h2 className="border-fg border-b text-3xl font-bold">After Party</h2>
+      <div className="space-y-2 self-center rounded-xl border border-fg p-6 shadow-lg">
+        <h2 className="border-b border-fg text-3xl font-bold">After Party</h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
-          labore, dolores architecto beatae nemo aspernatur voluptates excepturi
+          Homage presents…. An Evening of Dreams on Jets A Music Festival
+          Weekend Party Homage Awards, bring you the Flyiest & Sexiest gathering
+          of the weekend hosted by Dream Doll
         </p>
         <ul className="list-inside list-disc">
-          <li>Lorem ipsum, dolor</li>
-          <li>Sit amet consectetur</li>
-          <li>Dolores architecto beatae nemo</li>
+          <li>Saturday, July 6, 2024 11pm-til</li>
+          <li>
+            Ohm Lounge New Orleans | 601 Tchoupitoulas Street New Orleans, LA
+            70130
+          </li>
+          <li>Sounds provided Dj Peter Paul</li>
         </ul>
-        <p>
+        {/* <p>
           Distinctio non maxime quis, illo quo sequi, quasi corrupti quae odit
           Eius eligendi similique, assumenda, delectus, soluta omnis numquam
           animi nisi nobis deleniti ea. Sunt!
-        </p>
+        </p> */}
       </div>
     </section>
   );
