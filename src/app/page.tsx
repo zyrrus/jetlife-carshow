@@ -27,24 +27,17 @@ const Hero = () => {
       </div>
       {/* Background Image */}
       <div className="relative -z-10 mx-auto mt-[min(8vw,1800px*0.08)] aspect-[1792/1024] w-full max-w-[1800px] ">
-        {/* <Image
-          src="/assets/hero.webp"
-          alt=""
-          fill
-          className="object-contain object-bottom"
-          priority
-        /> */}
         <Image
           src="/assets/car1.webp"
           alt=""
-          className="object-contain object-bottom"
+          className="scale-[.6] object-contain object-bottom mix-blend-hue"
           priority
           fill
         />
         <div className="absolute inset-0 [background-image:linear-gradient(to_top,#C0B2AC,rgba(0,0,0,0)_30%),linear-gradient(to_bottom,#C0B2AC,rgba(0,0,0,0)_20%),linear-gradient(to_left,#C0B2AC,rgba(0,0,0,0)_10%),linear-gradient(to_right,#C0B2AC,rgba(0,0,0,0)_10%)]" />
       </div>
       {/* CTA */}
-      <div className="container -mt-[min(12.5vw,1800px*0.125)] mb-[min(5vw,1800px*0.05)] flex flex-col justify-center gap-4 md:flex-row">
+      <div className="container -mt-[min(10vw,1800px*0.10)] mb-[min(5vw,1800px*0.05)] flex flex-col justify-center gap-4 lg:flex-row">
         <a
           href="#event-details"
           className="flex-1 rounded-xl border border-fg py-6 text-center text-xl font-bold transition-all hover:border-transparent hover:bg-white/20"
@@ -56,14 +49,14 @@ const Hero = () => {
           target="_blank"
           className="flex-1 rounded-xl border border-fg py-6 text-center text-xl font-bold transition-all hover:border-transparent hover:bg-white/20"
         >
-          Register to be a Vendor
+          Register to be a vendor
         </a>
         <a
           href="https://www.eventbrite.com/e/the-jetlife-cars-coffee-bike-carshow-presented-by-nascar-tickets-888104393147?aff=oddtdtcreator"
           target="_blank"
           className="flex-1 rounded-xl border border-fg py-6 text-center text-xl font-bold transition-all hover:border-transparent hover:bg-white/20"
         >
-          Register Your Car
+          Register your car
         </a>
       </div>
     </section>
@@ -163,11 +156,6 @@ const Afterparty = () => {
           </li>
           <li>Sounds provided Dj Peter Paul</li>
         </ul>
-        {/* <p>
-          Distinctio non maxime quis, illo quo sequi, quasi corrupti quae odit
-          Eius eligendi similique, assumenda, delectus, soluta omnis numquam
-          animi nisi nobis deleniti ea. Sunt!
-        </p> */}
       </div>
     </section>
   );
