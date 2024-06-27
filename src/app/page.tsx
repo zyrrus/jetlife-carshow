@@ -56,7 +56,14 @@ const Hero = () => {
           target="_blank"
           className="flex-1 rounded-xl border border-fg py-6 text-center text-xl font-bold transition-all hover:border-transparent hover:bg-white/20"
         >
-          Click to purchase
+          Register to be a Vendor
+        </a>
+        <a
+          href="https://www.eventbrite.com/e/the-jetlife-cars-coffee-bike-carshow-presented-by-nascar-tickets-888104393147?aff=oddtdtcreator"
+          target="_blank"
+          className="flex-1 rounded-xl border border-fg py-6 text-center text-xl font-bold transition-all hover:border-transparent hover:bg-white/20"
+        >
+          Register Your Car
         </a>
       </div>
     </section>
