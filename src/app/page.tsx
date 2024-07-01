@@ -132,7 +132,7 @@ const Afterparty = () => {
       className="container grid max-w-md grid-cols-1 gap-x-8 gap-y-9 py-24 md:max-w-screen-lg md:grid-cols-2"
     >
       <Poster
-        src="/assets/flyers/dream-doll.webp"
+        src="/assets/flyers/dream-doll-2.jpg"
         className={cn(
           "w-full max-w-md rotate-6 justify-self-center md:order-1",
           "before:absolute before:bottom-2.5 before:-z-10 before:h-2.5 before:w-2/5 before:shadow-[0_5px_14px_rgba(0,0,0,0.7)] before:transition-all before:content-['']",
@@ -145,8 +145,12 @@ const Afterparty = () => {
         <h2 className="border-b border-fg text-3xl font-bold">After Party</h2>
         <p>
           Homage presents…. An Evening of Dreams on Jets A Music Festival
-          Weekend Party Homage Awards, bring you the Flyiest & Sexiest gathering
-          of the weekend hosted by Dream Doll
+          Weekend Party Homage Awards, Jetlife, & The 504 Live bring you the
+          Flyiest & Sexiest gathering of the weekend hosted by Dream Doll & The
+          Jetlife Family Come celebrate the The Dream Doll Experience + Primere
+          of Her New Single “JELLY” Rmx f 2RARE The official Cars & Coffee Car
+          Show presented by NASCAR After-Party All during Music Festival Weekend
+          Powered by Espolon Tequila
         </p>
         <ul className="list-inside list-disc">
           <li>Saturday, July 6, 2024 11pm-til</li>
