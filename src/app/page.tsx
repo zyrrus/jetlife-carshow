@@ -141,25 +141,35 @@ const Afterparty = () => {
           "after:right-4 after:rotate-0 after:skew-x-6 after:skew-y-6",
         )}
       />
-      <div className="space-y-2 self-center rounded-xl border border-fg p-6 shadow-lg">
-        <h2 className="border-b border-fg text-3xl font-bold">After Party</h2>
-        <p>
-          Homage presents…. An Evening of Dreams on Jets A Music Festival
-          Weekend Party Homage Awards, Jetlife, & The 504 Live bring you the
-          Flyiest & Sexiest gathering of the weekend hosted by Dream Doll & The
-          Jetlife Family Come celebrate the The Dream Doll Experience + Primere
-          of Her New Single “JELLY” Rmx f 2RARE The official Cars & Coffee Car
-          Show presented by NASCAR After-Party All during Music Festival Weekend
-          Powered by Espolon Tequila
-        </p>
-        <ul className="list-inside list-disc">
-          <li>Saturday, July 6, 2024 11pm-til</li>
-          <li>
-            Ohm Lounge New Orleans | 601 Tchoupitoulas Street New Orleans, LA
-            70130
-          </li>
-          <li>Sounds provided Dj Peter Paul</li>
-        </ul>
+      <div className="flex flex-col gap-y-8 self-center">
+        <div className="space-y-2 rounded-xl border border-fg p-6 shadow-lg">
+          <h2 className="border-b border-fg text-3xl font-bold">After Party</h2>
+          <p>
+            Homage presents…. An Evening of Dreams on Jets A Music Festival
+            Weekend Party Homage Awards, Jetlife, & The 504 Live bring you the
+            Flyest & Sexiest gathering of the weekend hosted by Dream Doll & The
+            Jetlife Family Come celebrate the The Dream Doll Experience +
+            Premiere of Her New Single “JELLY” Rmx f 2RARE The official Cars &
+            Coffee Car Show presented by NASCAR After-Party All during Music
+            Festival Weekend Powered by Espolon Tequila
+          </p>
+          <ul className="list-inside list-disc">
+            <li>Saturday, July 6, 2024 11pm-til</li>
+            <li>
+              Ohm Lounge New Orleans | 601 Tchoupitoulas Street New Orleans, LA
+              70130
+            </li>
+            <li>Sounds provided Dj Peter Paul</li>
+          </ul>
+        </div>
+
+        <a
+          href="https://dreamsonjets.eventbrite.com/"
+          target="_blank"
+          className="w-full rounded-xl border border-fg py-6 text-center text-xl font-bold transition-all hover:border-transparent hover:bg-white/20"
+        >
+          Click to purchase
+        </a>
       </div>
     </section>
   );
@@ -177,7 +187,7 @@ const Poster = ({
   return (
     <div
       className={cn(
-        "relative aspect-[108/135] w-auto max-w-[1080px] bg-red-500",
+        "relative aspect-[108/135] w-auto max-w-[1080px] bg-stone-400",
         className,
       )}
     >
